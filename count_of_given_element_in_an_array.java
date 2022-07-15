@@ -1,24 +1,21 @@
-import java.util.Scanner;
-class abd{
-    public static void main (String args[])
-    {
-        int n,i,k,count=0;
-        Scanner sc=new Scanner(System.in);
-        n=sc.nextInt();
-        
-        int arr[]=new int[n];
+import java.util.*;
+class Abd{
+   public static void main(String args[])
+   {
+       int n,key,i,count=0;
+       Scanner sc=new Scanner(System.in);
+       n=sc.nextInt();
+       int x[]=new int[n];
+       for(i=0;i<n;i++)
+       {
+           x[i]=sc.nextInt();
+       }
+        key=sc.nextInt();
         for(i=0;i<n;i++)
-        {
-            arr[i]=sc.nextInt();
-        }
-         k=sc.nextInt();
-         for(i=0;i<n;i++)
-         {
-             if(arr[i]==k)
-             {
-                 count=count+1;
-             }
-         }
-         System.out.println(count);
-    }
+       {
+          if(x[i]==key)
+          count++;
+       }
+       System.out.println(count);
+   }
 }
